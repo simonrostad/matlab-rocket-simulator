@@ -1,6 +1,6 @@
-y0 = [0;0];
+y0 = [0;0;3.675e6];
 
-tspan = [0 20];
+tspan = [0 166];
 
 [t,y] = ode45(@rocketDynamics, tspan,y0)
 
@@ -20,4 +20,10 @@ figure
 plot(t,y(:,2))
 xlabel('Time (s)')
 ylabel('Velocity (m/s)')
+grid on
+
+figure
+plot(t,y(:,3))
+xlabel('Time (s)')
+ylabel('Mass (kg)')
 grid on
