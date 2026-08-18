@@ -1,2 +1,10 @@
-# matlab-rocket-simulator
-MATLAB rocket flight simulator using ode45
+# MATLAB Rocket Simulator
+
+A simple rocket flight simulation built in MATLAB using ode45.
+
+Current features:
+- Vertical flight simulation
+- Constant thrust
+- Motor burnout
+- Gravity
+- Apogee calculation
